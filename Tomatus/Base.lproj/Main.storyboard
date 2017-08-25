@@ -41,7 +41,7 @@
                                             <constraint firstAttribute="width" secondItem="O0T-VY-RGF" secondAttribute="height" multiplier="1:1" id="K23-2j-9XG"/>
                                             <constraint firstAttribute="width" constant="22" id="N3v-xu-12z"/>
                                         </constraints>
-                                        <color key="tintColor" red="0.49164807796478271" green="0.39476591348648071" blue="0.60167878866195679" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.49019607843137253" green="0.396078431372549" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.86375100008727101" green="0.95814427534599489" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -101,12 +101,50 @@
                     <view key="view" contentMode="scaleToFill" id="I8l-p2-9y7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUM-5B-u8e">
+                                <rect key="frame" x="0.0" y="257" width="375" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="qW3-3d-Iju"/>
+                                    <constraint firstAttribute="width" secondItem="AUM-5B-u8e" secondAttribute="height" multiplier="375:152" id="ybe-h2-t6e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="120"/>
+                                <color key="textColor" red="1" green="0.29019607843137252" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDc-N6-uQq">
+                                <rect key="frame" x="0.0" y="482" width="375" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="f2g-nv-WXM"/>
+                                    <constraint firstAttribute="width" secondItem="iDc-N6-uQq" secondAttribute="height" multiplier="375:91" constant="-197.80219780219772" id="rYq-S8-NeQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="65"/>
+                                <color key="tintColor" red="0.0013321975711733103" green="0.51084601879119873" blue="0.095363222062587738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Focus!"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pomodoro" translatesAutoresizingMaskIntoConstraints="NO" id="1hz-Hl-lqR">
+                                <rect key="frame" x="120" y="96" width="134" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="3pT-rt-GSp"/>
+                                    <constraint firstAttribute="width" constant="134" id="BNR-pL-JLx"/>
+                                    <constraint firstAttribute="width" secondItem="1hz-Hl-lqR" secondAttribute="height" multiplier="67:64" id="iFT-yi-D6p"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.98913558469999996" green="1" blue="0.82734715569999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AUM-5B-u8e" firstAttribute="centerY" secondItem="I8l-p2-9y7" secondAttribute="centerY" id="ELE-Zl-6a4"/>
+                            <constraint firstItem="AUM-5B-u8e" firstAttribute="centerX" secondItem="I8l-p2-9y7" secondAttribute="centerX" id="ELY-SY-rlH"/>
+                            <constraint firstItem="1hz-Hl-lqR" firstAttribute="centerX" secondItem="I8l-p2-9y7" secondAttribute="centerX" id="TH6-2u-FQn"/>
+                            <constraint firstItem="AUM-5B-u8e" firstAttribute="top" secondItem="1hz-Hl-lqR" secondAttribute="bottom" constant="33" id="UVH-0Z-LJg"/>
+                            <constraint firstItem="iDc-N6-uQq" firstAttribute="top" secondItem="AUM-5B-u8e" secondAttribute="bottom" constant="73" id="Utl-03-Pry"/>
+                            <constraint firstItem="iDc-N6-uQq" firstAttribute="centerX" secondItem="I8l-p2-9y7" secondAttribute="centerX" id="aP5-Ue-VRp"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jeq-PB-EQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="836" y="136"/>
+            <point key="canvasLocation" x="836" y="135.38230884557723"/>
         </scene>
         <!--Meditation View Controller-->
         <scene sceneID="2yr-28-BGw">
@@ -119,12 +157,37 @@
                     <view key="view" contentMode="scaleToFill" id="QiM-Jr-0HX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbb-U3-55p">
+                                <rect key="frame" x="0.0" y="257" width="375" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="120"/>
+                                <color key="textColor" red="0.52658522129058838" green="0.59200984239578247" blue="0.7952960729598999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lotus" translatesAutoresizingMaskIntoConstraints="NO" id="pfT-Ug-qhh">
+                                <rect key="frame" x="120" y="96" width="134" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mg8-Xj-NYz">
+                                <rect key="frame" x="0.0" y="482" width="375" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="65"/>
+                                <color key="tintColor" red="0.49019607840000001" green="0.39607843139999999" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Relax!"/>
+                            </button>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" maximumValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="558-DC-P7O">
+                                <rect key="frame" x="140" y="417" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.49019607840000001" green="0.39607843139999999" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stepper>
+                        </subviews>
                         <color key="backgroundColor" red="0.86375100010000005" green="0.95814427530000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HXd-oJ-6Dn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1518" y="136"/>
+            <point key="canvasLocation" x="1517.5999999999999" y="135.38230884557723"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="yPs-1w-pJO">
