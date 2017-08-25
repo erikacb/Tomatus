@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		E817F5E91F506E9E000891B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E817F5E81F506E9E000891B6 /* AppDelegate.swift */; };
-		E817F5EB1F506E9E000891B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E817F5EA1F506E9E000891B6 /* ViewController.swift */; };
+		E817F5EB1F506E9E000891B6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E817F5EA1F506E9E000891B6 /* HomeViewController.swift */; };
 		E817F5EE1F506E9E000891B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E817F5EC1F506E9E000891B6 /* Main.storyboard */; };
 		E817F5F01F506E9E000891B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E817F5EF1F506E9E000891B6 /* Assets.xcassets */; };
 		E817F5F31F506E9E000891B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E817F5F11F506E9E000891B6 /* LaunchScreen.storyboard */; };
 		E817F5FE1F506E9E000891B6 /* TomatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E817F5FD1F506E9E000891B6 /* TomatusTests.swift */; };
 		E817F6091F506E9F000891B6 /* TomatusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E817F6081F506E9F000891B6 /* TomatusUITests.swift */; };
+		E817F6171F5085F4000891B6 /* PomodoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E817F6161F5085F4000891B6 /* PomodoroViewController.swift */; };
+		E817F6191F508625000891B6 /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E817F6181F508625000891B6 /* MeditationViewController.swift */; };
+		E817F61B1F508648000891B6 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E817F61A1F508648000891B6 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		E817F5E51F506E9E000891B6 /* Tomatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tomatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E817F5E81F506E9E000891B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E817F5EA1F506E9E000891B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E817F5EA1F506E9E000891B6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E817F5ED1F506E9E000891B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E817F5EF1F506E9E000891B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E817F5F21F506E9E000891B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		E817F6041F506E9E000891B6 /* TomatusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TomatusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E817F6081F506E9F000891B6 /* TomatusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatusUITests.swift; sourceTree = "<group>"; };
 		E817F60A1F506E9F000891B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E817F6161F5085F4000891B6 /* PomodoroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomodoroViewController.swift; sourceTree = "<group>"; };
+		E817F6181F508625000891B6 /* MeditationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
+		E817F61A1F508648000891B6 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				E817F5E81F506E9E000891B6 /* AppDelegate.swift */,
-				E817F5EA1F506E9E000891B6 /* ViewController.swift */,
+				E817F5EA1F506E9E000891B6 /* HomeViewController.swift */,
+				E817F6161F5085F4000891B6 /* PomodoroViewController.swift */,
+				E817F6181F508625000891B6 /* MeditationViewController.swift */,
+				E817F61A1F508648000891B6 /* InfoViewController.swift */,
 				E817F5EC1F506E9E000891B6 /* Main.storyboard */,
 				E817F5EF1F506E9E000891B6 /* Assets.xcassets */,
 				E817F5F11F506E9E000891B6 /* LaunchScreen.storyboard */,
@@ -262,8 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E817F5EB1F506E9E000891B6 /* ViewController.swift in Sources */,
+				E817F6171F5085F4000891B6 /* PomodoroViewController.swift in Sources */,
+				E817F5EB1F506E9E000891B6 /* HomeViewController.swift in Sources */,
+				E817F6191F508625000891B6 /* MeditationViewController.swift in Sources */,
 				E817F5E91F506E9E000891B6 /* AppDelegate.swift in Sources */,
+				E817F61B1F508648000891B6 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

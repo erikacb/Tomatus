@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tomatus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Tomatus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -41,6 +41,7 @@
                                             <constraint firstAttribute="width" secondItem="O0T-VY-RGF" secondAttribute="height" multiplier="1:1" id="K23-2j-9XG"/>
                                             <constraint firstAttribute="width" constant="22" id="N3v-xu-12z"/>
                                         </constraints>
+                                        <color key="tintColor" red="0.49164807796478271" green="0.39476591348648071" blue="0.60167878866195679" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.86375100008727101" green="0.95814427534599489" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -89,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
         </scene>
-        <!--View Controller-->
+        <!--Pomodoro View Controller-->
         <scene sceneID="p5F-tA-R4r">
             <objects>
-                <viewController storyboardIdentifier="POMODORO" id="ZsI-fU-krp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="POMODORO" id="ZsI-fU-krp" customClass="PomodoroViewController" customModule="Tomatus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="npF-Hd-E3M"/>
                         <viewControllerLayoutGuide type="bottom" id="hwX-aU-KiJ"/>
@@ -107,10 +108,10 @@
             </objects>
             <point key="canvasLocation" x="836" y="136"/>
         </scene>
-        <!--View Controller-->
+        <!--Meditation View Controller-->
         <scene sceneID="2yr-28-BGw">
             <objects>
-                <viewController storyboardIdentifier="MEDITATION" id="W6p-eo-qeb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MEDITATION" id="W6p-eo-qeb" customClass="MeditationViewController" customModule="Tomatus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zEP-h5-4F4"/>
                         <viewControllerLayoutGuide type="bottom" id="dNK-qJ-9Pu"/>
@@ -124,6 +125,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HXd-oJ-6Dn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1518" y="136"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="yPs-1w-pJO">
+            <objects>
+                <viewController storyboardIdentifier="INFO" id="ZTZ-sI-fUj" customClass="InfoViewController" customModule="Tomatus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xgx-gD-EBC"/>
+                        <viewControllerLayoutGuide type="bottom" id="pHt-aq-7Ot"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pOp-Xf-8AM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kd5-ff-IdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2201" y="135"/>
         </scene>
     </scenes>
     <resources>
